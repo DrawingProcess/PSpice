@@ -1,0 +1,6 @@
+* source BASIC5
+R_R1         N01353 N01363  1k TC=0,0 
+V_V1         N01353 0  AC 1
++SIN 0 1 1k 0 0 0
+R_R2         N01363 0  1k TC=0,0 
+C_C1         0 N01363  1n  TC=0,0 

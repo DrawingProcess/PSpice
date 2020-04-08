@@ -1,0 +1,5 @@
+* source BASIC3
+R_R1         N00569 N00579  1k TC=0,0 
+R_R2         N00579 0  1k TC=0,0 
+V_V1         N00569 0 DC 0Vdc AC 10Vac 
+C_C1         0 N00579  1n  TC=0,0 

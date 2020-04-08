@@ -1,0 +1,87 @@
+
+**** 04/09/20 06:59:44 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Basic4_Simul"  [ C:\Users\seongjun\Desktop\Program\Pspice\Basic4-PSpiceFiles\SCHEMATIC1\Basic4_Simul.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "Basic4_Simul.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\seongjun\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 3m 0 1u 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source BASIC4
+C_C1         0 N01061  1n  TC=0,0 
+R_R1         N01051 N01061  1k TC=0,0 
+R_R2         N01061 0  1k TC=0,0 
+V_V1         N01051 0  AC 1
++SIN 0 1 1k 0 0 0
+
+**** RESUMING Basic4_Simul.cir ****
+.END
+
+**** 04/09/20 06:59:44 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Basic4_Simul"  [ C:\Users\seongjun\Desktop\Program\Pspice\Basic4-PSpiceFiles\SCHEMATIC1\Basic4_Simul.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N01051)    0.0000 (N01061)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 04/09/20 06:59:44 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Basic4_Simul"  [ C:\Users\seongjun\Desktop\Program\Pspice\Basic4-PSpiceFiles\SCHEMATIC1\Basic4_Simul.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .05
+

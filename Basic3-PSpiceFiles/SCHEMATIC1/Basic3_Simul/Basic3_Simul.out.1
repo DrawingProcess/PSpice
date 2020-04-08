@@ -1,0 +1,43 @@
+
+**** 04/09/20 06:26:26 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Basic3_Simul"  [ C:\Users\seongjun\Desktop\Program\Pspice\Basic3-PSpiceFiles\SCHEMATIC1\Basic3_Simul.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "Basic3_Simul.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\seongjun\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.AC DEC 1000 1k 10M
+----------------$
+ERROR(ORPSIM-16103): Invalid value
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source BASIC3
+R_R4         N00569 N00579  1k TC=0,0 
+R_R5         N00579 0  1k TC=0,0 
+V_V3         N00569 0 DC 0Vdc AC 10Vac 
+C_C1         0 N00579  1n  TC=0,0 
+
+**** RESUMING Basic3_Simul.cir ****
+.END
+
