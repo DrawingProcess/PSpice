@@ -1,4 +1,4 @@
-** Profile: "SCHEMATIC1-Basic3_Simul"  [ C:\Users\seongjun\Desktop\Program\Pspice\Basic3-PSpiceFiles\SCHEMATIC1\Basic3_Simul.sim ] 
+** Profile: "SCHEMATIC1-Basic3_Simul"  [ C:\Users\seongjun\Desktop\Program\Pspice\basic3-pspicefiles\schematic1\basic3_simul.sim ] 
 
 ** Creating circuit file "Basic3_Simul.cir" 
 ** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
@@ -10,7 +10,7 @@
 .lib "nomd.lib" 
 
 *Analysis directives: 
-.AC DEC 1000 1k 10mega
+.AC DEC 100000 1k 10mega
 .OPTIONS ADVCONV
 .PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
 .INC "..\SCHEMATIC1.net" 

@@ -3,7 +3,7 @@
 @Settings: 2 1
 @General:
 ProfileName= "Basic3_Simul" 
-ProfileFile= "Basic3_Simul.sim" 
+ProfileFile= "basic3_simul.sim" 
 Connectivity= "SCHEMATIC1.net" 
 NetlistFile= "Basic3_Simul.cir" 
 DataFile= "Basic3_Simul.dat" 
@@ -24,7 +24,7 @@ Notes=
 @End Analysis
 @Analysis: 1 1
 +2 0 0
-+0 "1000" 
++0 "100000" 
 +1 "1k" 
 +2 "10mega" 
 +3 "" 
