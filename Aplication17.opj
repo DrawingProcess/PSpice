@@ -67,10 +67,11 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 2 3 -1 -1 -8 -31 78 910 78 307")
-        (Scroll "0 0")
-        (Zoom "100")
+        (Placement "44 0 1 -1 -1 -8 -31 78 910 78 307")
+        (Scroll "298 144")
+        (Zoom "200")
         (Occurrence "/"))
       (Path "C:\USERS\SEONGJUN\DESKTOP\PROGRAM\PSPICE\APLICATION17.DSN")
       (Schematic "SCHEMATIC1")
-      (Page "PAGE1"))))
+      (Page "PAGE1")))
+  (MPSSessionName "seongjun"))

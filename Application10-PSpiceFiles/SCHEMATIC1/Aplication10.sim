@@ -3,7 +3,7 @@
 @Settings: 2 1
 @General:
 ProfileName= "Aplication10" 
-ProfileFile= "Aplication10.sim" 
+ProfileFile= "aplication10.sim" 
 Connectivity= "SCHEMATIC1.net" 
 NetlistFile= "Aplication10.cir" 
 DataFile= "Aplication10.dat" 

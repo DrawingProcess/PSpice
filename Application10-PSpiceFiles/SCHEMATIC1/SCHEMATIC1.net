@@ -1,0 +1,12 @@
+* source APPLICATION10
+V_V1         N00172 0  AC 10
++SIN 0 10 1000 0 0 0
+L_L1         0 N00186  1.7mH  
+R_R1         N00172 N00179  5 TC=0,0 
+C_C1         N00186 N00179  17uF  TC=0,0 
+R_R2         N00310 N00318  0.001n TC=0,0 
+L_L2         0 N00318  1.7mH  
+C_C2         0 N00318  17uF  TC=0,0 
+V_V2         N00310 0  AC 10
++SIN 0 10 1000 0 0 0
+R_R3         0 N00318  10 TC=0,0 
