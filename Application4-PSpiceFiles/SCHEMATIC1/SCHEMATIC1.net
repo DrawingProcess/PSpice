@@ -1,0 +1,8 @@
+* source APPLICATION4
+V_V1         N000500 0 50Vdc
+R_R1         N000500 N00194  5k TC=0,0 
+R_R3         N00259 0  1k TC=0,0 
+R_R4         N00194 0  10k TC=0,0 
+R_R5         N00194 0  5k TC=0,0 
+R_R6         N00259 N00194  3k TC=0,0 
+R_R2         N00259 N00194  3k TC=0,0 

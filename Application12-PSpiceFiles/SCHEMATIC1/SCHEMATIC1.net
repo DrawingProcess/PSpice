@@ -1,0 +1,11 @@
+* source APPLICATION12
+R_R1         N01010 N01018  0.5 TC=0,0 
+L_L1         0 N01070  110mH  
+C_C1         N01070 N01018  20uF  TC=0,0 
+V_V2         N01340 0  AC 10
++SIN 0 10 100 0 0 0
+C_C2         N01400 N01348  20uF  TC=0,0 
+R_R2         N01340 N01348  0.5 TC=0,0 
+L_L2         0 N01400  110mH  
+V_V3         N01010 0  
++PULSE -10 10 0 0.1ms 0.1ms 5ms 10ms

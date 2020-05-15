@@ -1,0 +1,6 @@
+* source APPLICATION6
+R_R1         N00330 N00334  10 TC=0,0 
+X_U2         N00322 N00330 Sw_tClose PARAMS: tClose=0 ttran=1u Rclosed=0.01
++  Ropen=1Meg
+V_V1         N00322 0 10Vdc
+L_L1         0 N00334  1.7mH IC=0 

@@ -1,0 +1,108 @@
+
+**** 05/14/20 21:13:42 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Application6"  [ C:\Users\seongjun\Desktop\Program\Pspice\Application6-PSpiceFiles\SCHEMATIC1\Application6.s
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "Application6.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\seongjun\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 2ms 0 10us 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source APPLICATION6
+R_R1         N00330 N00334  10 TC=0,0 
+X_U2         N00322 N00330 Sw_tClose PARAMS: tClose=0 ttran=1u Rclosed=0.01
++  Ropen=1Meg
+V_V1         N00322 0 10Vdc
+L_L1         0 N00334  1.7mH IC=0 
+
+**** RESUMING Application6.cir ****
+.END
+
+**** 05/14/20 21:13:42 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Application6"  [ C:\Users\seongjun\Desktop\Program\Pspice\Application6-PSpiceFiles\SCHEMATIC1\Application6.s
+
+
+ ****     Voltage Controlled Switch MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U2.Smod       
+         RON     .01         
+        ROFF    1.000000E+06 
+         VON    1            
+        VOFF    0            
+
+
+**** 05/14/20 21:13:42 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Application6"  [ C:\Users\seongjun\Desktop\Program\Pspice\Application6-PSpiceFiles\SCHEMATIC1\Application6.s
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00322)   10.0000 (N00330)    9.9900 (N00334)    9.9900 (X_U2.3)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -9.990E-09
+    X_U2.V1      0.000E+00
+
+    TOTAL POWER DISSIPATION   9.99E-08  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 05/14/20 21:13:42 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Application6"  [ C:\Users\seongjun\Desktop\Program\Pspice\Application6-PSpiceFiles\SCHEMATIC1\Application6.s
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .19
+

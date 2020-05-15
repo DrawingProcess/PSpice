@@ -1,0 +1,51 @@
+
+**** 05/15/20 15:50:19 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Application14"  [ C:\Users\seongjun\Desktop\Program\Pspice\Application14-PSpiceFiles\SCHEMATIC1\Application1
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "Application14.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\seongjun\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 10ms 0 10 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source APPLICATION14
+V_V1         N00288 0  AC <AC>
+---------------------------$
+ERROR(ORPSIM-16492): Missing value
++SIN 0 50m 1000 0 0 0
+R_R1         N00364 N00392  30k TC=0,0 
+R_R2         N00340 N00392  10k TC=0,0 
+R_R3         N00288 N00628  1k TC=0,0 
+R_R4         N00333 0  100k TC=0,0 
+R_R5         0 N00364  100k TC=0,0 
+R_R6         0 N00360  5k TC=0,0 
+C_C1         N00340 N00333  10uF  TC=0,0 
+Q_Q1         N00340 N00364 N00360 Q2N3904
+C_C2         N00628 N00364  10uF  TC=0,0 
+V_V2         N00392 0 12Vdc
+
+**** RESUMING Application14.cir ****
+.END
+

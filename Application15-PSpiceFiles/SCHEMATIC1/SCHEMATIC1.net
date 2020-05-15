@@ -1,0 +1,13 @@
+* source APPLICATION15
+R_R1         N00904 N00864  33k TC=0,0 
+R_R5         0 N00904  33k TC=0,0 
+C_C2         N01002 N00904  0.47uF  TC=0,0 
+V_V2         N00864 0 12Vdc
+R_R6         0 N01034  3.9k TC=0,0 
+C_C1         N00908 N00936  0.47uF  TC=0,0 
+R_R4         N00936 0  5.6k TC=0,0 
+V_V1         N01002 0  
++SIN 0 50m 1000 0 0 0
+R_R2         N00908 N00864  4.7k TC=0,0 
+C_C3         0 N01034  0.47uF  TC=0,0 
+Q_Q2         N00908 N00904 N01034 BC109C 

@@ -1,0 +1,10 @@
+* source APPLICATION7
+V_V1         N00246 0 10Vdc
+X_U2         N00246 N00253 Sw_tClose PARAMS: tClose=0.1m ttran=1u Rclosed=0.01
++  Ropen=1Meg
+X_U3         0 N00257 Sw_tClose PARAMS: tClose=10.0m ttran=1u Rclosed=0.01
++  Ropen=1Meg
+C_C1         N00257 N00226  1.7uF  TC=0,0 
+L_L1         0 N00226  1.7mH  
+X_U1         N00253 N00257 Sw_tOpen PARAMS: tOpen=10m ttran=1u Rclosed=0.01
++  Ropen=1Meg

@@ -1,0 +1,17 @@
+* source APPLICATION13
+V_V1         N00167 0 DC 0Vdc AC 10Vac 
+R_R1         N00174 N00167  500 TC=0,0 
+C_C1         0 N00174  0.32uF  TC=0,0 
+C_C2         0 N00523  0.199uF  TC=0,0 
+V_V2         N00479 0 DC 0Vdc AC 10Vac 
+R_R2         N00523 N00479  200 TC=0,0 
+C_C3         N007220 N006781  0.01uF  TC=0,0 
+V_V3         N00662 0 DC 0Vdc AC 10Vac 
+R_R3         N006781 N00662  3.8 TC=0,0 
+L_L1         N007220 N00877  0.12mH  
+R_R4         0 N00877  3.8 TC=0,0 
+V_V4         N01140 0 DC 0Vdc AC 10Vac 
+R_R5         N011161 N01140  1 TC=0,0 
+R_R6         0 N01148  20 TC=0,0 
+C_C4         N011000 N011161  0.4uF  TC=0,0 
+L_L2         N011000 N01148  1mH  

@@ -1,0 +1,144 @@
+
+**** 05/15/20 18:39:01 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Application16"  [ C:\Users\seongjun\Desktop\Program\Pspice\Application16-PSpiceFiles\SCHEMATIC1\Application1
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "Application16.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\seongjun\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 10ms 0 10u 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source APPLICATION16
+R_R3         N01002 N01246  100k TC=0,0 
+V_V2         N00868 0 12Vdc
+Q_Q1         N00908 N01246 N01034 Q2N3904
+R_R4         N00936 0  100k TC=0,0 
+R_R2         N00908 N00868  10k TC=0,0 
+C_C1         N00908 N00936  10uF  TC=0,0 
+R_R6         0 N01034  0.1k TC=0,0 
+V_V3         N01002 0  
++PULSE 0 5 0 0 0 1m 2m
+
+**** RESUMING Application16.cir ****
+.END
+
+**** 05/15/20 18:39:01 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Application16"  [ C:\Users\seongjun\Desktop\Program\Pspice\Application16-PSpiceFiles\SCHEMATIC1\Application1
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Q2N3904         
+               NPN             
+       LEVEL    1            
+          IS    6.734000E-15 
+          BF  416.4          
+          NF    1            
+         VAF   74.03         
+         IKF     .06678      
+         ISE    6.734000E-15 
+          NE    1.259        
+          BR     .7371       
+          NR    1            
+         ISS    0            
+          RB   10            
+          RE    0            
+          RC    1            
+         CJE    4.493000E-12 
+         VJE     .75         
+         MJE     .2593       
+         CJC    3.638000E-12 
+         VJC     .75         
+         MJC     .3085       
+        XCJC    1            
+         CJS    0            
+         VJS     .75         
+          TF  301.200000E-12 
+         XTF    2            
+         VTF    4            
+         ITF     .4          
+          TR  239.500000E-09 
+         XTB    1.5          
+          KF    0            
+          AF    1            
+          CN    2.42         
+           D     .87         
+
+
+**** 05/15/20 18:39:01 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Application16"  [ C:\Users\seongjun\Desktop\Program\Pspice\Application16-PSpiceFiles\SCHEMATIC1\Application1
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00868)   12.0000 (N00908)   12.0000 (N00936)    0.0000 (N01002)    0.0000     
+
+(N01034) 1.395E-09 (N01246) 1.629E-06 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V2        -3.024E-11
+    V_V3         1.629E-11
+
+    TOTAL POWER DISSIPATION   3.63E-10  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 05/15/20 18:39:01 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Application16"  [ C:\Users\seongjun\Desktop\Program\Pspice\Application16-PSpiceFiles\SCHEMATIC1\Application1
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .06
+

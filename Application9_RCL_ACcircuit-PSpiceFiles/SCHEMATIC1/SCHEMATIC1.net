@@ -1,0 +1,19 @@
+* source APPLICATION9_RCL_ACCIRCUIT
+V_V1         N00142 0  AC 10
++SIN 0 10 1000 0 0 0
+R_R1         0 N00142  10 TC=0,0 
+V_V2         N00257 0  AC 10
++SIN 0 10 1000 0 0 0
+V_V3         N00411 0  AC 10
++SIN 0 10 1000 0 0 0
+R_R4         N01560 N00568  10 TC=0,0 
+V_V4         N00568 0  AC 10
++SIN 0 10 1000 0 0 0
+R_R5         N007761 N00728  10 TC=0,0 
+V_V5         N00728 0  AC 10
++SIN 0 10 1000 0 0 0
+C_C1         0 N00257  17uF  TC=0,0 
+L_L1         N00471 N00411  1.7mH  
+R_R6         0 N00471  0.001n TC=0,0 
+C_C2         0 N01560  17uF  TC=0,0 
+L_L2         0 N007761  10uH  

@@ -1,0 +1,117 @@
+
+**** 05/14/20 21:41:58 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Application8_RCLcircuit"  [ C:\Users\seongjun\Desktop\Program\Pspice\Application8-PSpiceFiles\SCHEMATIC1\App
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "Application8_RCLcircuit.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\seongjun\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 20ms 0 10u 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source APPLICATION8
+C_C1         N00684 N00500  1.7uF  TC=0,0 
+X_U2         N00476 N00484 Sw_tClose PARAMS: tClose=0.1m ttran=1u Rclosed=0.01
++  Ropen=1Meg
+X_U1         N00484 N00488 Sw_tOpen PARAMS: tOpen=10m ttran=1u Rclosed=0.01
++  Ropen=1Meg
+L_L1         0 N00500  1.7mH  
+V_V1         N00476 0 10Vdc
+X_U3         0 N00488 Sw_tClose PARAMS: tClose=10.0m ttran=1u Rclosed=0.01
++  Ropen=1Meg
+R_R1         N00488 N00684  1 TC=0,0 
+
+**** RESUMING Application8_RCLcircuit.cir ****
+.END
+
+**** 05/14/20 21:41:58 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Application8_RCLcircuit"  [ C:\Users\seongjun\Desktop\Program\Pspice\Application8-PSpiceFiles\SCHEMATIC1\App
+
+
+ ****     Voltage Controlled Switch MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U2.Smod       X_U1.Smod       X_U3.Smod       
+         RON     .01             .01             .01         
+        ROFF    1.000000E+06    1.000000E+06    1.000000E+06 
+         VON    1               1               1            
+        VOFF    0               0               0            
+
+
+**** 05/14/20 21:41:58 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Application8_RCLcircuit"  [ C:\Users\seongjun\Desktop\Program\Pspice\Application8-PSpiceFiles\SCHEMATIC1\App
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00476)   10.0000 (N00484)    5.0000 (N00488)    5.0000 (N00500)    0.0000     
+
+(N00684)    5.0000 (X_U1.3)    1.0000 (X_U2.3)    0.0000 (X_U3.3)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -5.000E-06
+    X_U2.V1      0.000E+00
+    X_U1.V1     -1.000E-12
+    X_U3.V1      0.000E+00
+
+    TOTAL POWER DISSIPATION   5.00E-05  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 05/14/20 21:41:58 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Application8_RCLcircuit"  [ C:\Users\seongjun\Desktop\Program\Pspice\Application8-PSpiceFiles\SCHEMATIC1\App
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .14
+

@@ -1,0 +1,102 @@
+
+**** 05/14/20 20:48:31 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Application4"  [ C:\Users\seongjun\Desktop\Program\Pspice\Application4-PSpiceFiles\SCHEMATIC1\Application4.s
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "Application4.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\seongjun\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.OP
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source APPLICATION4
+V_V1         N000500 0 50Vdc
+R_R1         N000500 N00194  5k TC=0,0 
+R_R3         N00259 0  1k TC=0,0 
+R_R4         N00194 0  10k TC=0,0 
+R_R5         N00194 0  5k TC=0,0 
+R_R6         N00259 N00194  3k TC=0,0 
+R_R2         N00259 N00194  3k TC=0,0 
+
+**** RESUMING Application4.cir ****
+.END
+
+**** 05/14/20 20:48:31 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Application4"  [ C:\Users\seongjun\Desktop\Program\Pspice\Application4-PSpiceFiles\SCHEMATIC1\Application4.s
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00194)   11.1110 (N00259)    4.4444 (N000500)   50.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -7.778E-03
+
+    TOTAL POWER DISSIPATION   3.89E-01  WATTS
+
+
+**** 05/14/20 20:48:31 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Application4"  [ C:\Users\seongjun\Desktop\Program\Pspice\Application4-PSpiceFiles\SCHEMATIC1\Application4.s
+
+
+ ****     OPERATING POINT INFORMATION      TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+
+          JOB CONCLUDED
+
+**** 05/14/20 20:48:31 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Application4"  [ C:\Users\seongjun\Desktop\Program\Pspice\Application4-PSpiceFiles\SCHEMATIC1\Application4.s
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .02
+

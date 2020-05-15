@@ -1,0 +1,61 @@
+
+**** 05/15/20 19:04:17 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Application17"  [ C:\Users\seongjun\Desktop\Program\Pspice\Aplication17-PSpiceFiles\SCHEMATIC1\Application17
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "Application17.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\seongjun\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 50ms 0 10u 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source APLICATION17
+R_R1         N00251 N000790  1k TC=0,0 
+R_R2         N00315 N00288  1k TC=0,0 
+C_C1         N00315 N00288  100uF  TC=0,0 
+X_TX1    N000790 0 N00258 N00262 SCHEMATIC1_TX1 
+D_D1         N00258 N00288 D1N4148 
+D_D2         N00262 N00288 D1N4148 
+D_D3         N00315 N00262 D1N4148 
+D_D4         N00315 N00258 D1N4148 
+V_V1         N00251 0  AC 0
++SIN 0 311.1 60 0 0 0
+
+.subckt SCHEMATIC1_TX1 1 2 3 4  
+K_TX1         L1_TX1 L2_TX1 1
+L1_TX1         1 2 10uH
+L2_TX1         3 4 10uH
+.ends SCHEMATIC1_TX1
+
+**** RESUMING Application17.cir ****
+.END
+
+ERROR(ORPSIM-15142): Node N00315 is floating
+
+ERROR(ORPSIM-15142): Node N00288 is floating
+
+ERROR(ORPSIM-15142): Node N00258 is floating
+
+ERROR(ORPSIM-15142): Node N00262 is floating
+

@@ -1,0 +1,19 @@
+** Profile: "SCHEMATIC1-Application9_RCL_ACcircuit"  [ C:\Users\seongjun\Desktop\Program\Pspice\application9_rcl_accircuit-pspicefiles\schematic1\application9_rcl_accircuit.sim ] 
+
+** Creating circuit file "Application9_RCL_ACcircuit.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\seongjun\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 2ms 0 10u 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+.END

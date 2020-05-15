@@ -1,0 +1,95 @@
+
+**** 05/15/20 14:24:16 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Application12_Pulse"  [ C:\Users\seongjun\Desktop\Program\Pspice\Application12-PSpiceFiles\SCHEMATIC1\Applic
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "Application12_Pulse.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\seongjun\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 300ms 0 10u 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source APPLICATION12
+R_R1         N01010 N01018  0.5 TC=0,0 
+L_L1         0 N01070  110mH  
+C_C1         N01070 N01018  20uF  TC=0,0 
+V_V2         N01340 0  AC 10
++SIN 0 10 100 0 0 0
+C_C2         N01400 N01348  20uF  TC=0,0 
+R_R2         N01340 N01348  0.5 TC=0,0 
+L_L2         0 N01400  110mH  
+V_V3         N01010 0  
++PULSE -10 10 0 0.1ms 0.1ms 5ms 10ms
+
+**** RESUMING Application12_Pulse.cir ****
+.END
+
+**** 05/15/20 14:24:16 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Application12_Pulse"  [ C:\Users\seongjun\Desktop\Program\Pspice\Application12-PSpiceFiles\SCHEMATIC1\Applic
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N01010)  -10.0000 (N01018)  -10.0000 (N01070)    0.0000 (N01340)    0.0000     
+
+(N01348)    0.0000 (N01400)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V2         0.000E+00
+    V_V3         0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 05/15/20 14:24:16 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Application12_Pulse"  [ C:\Users\seongjun\Desktop\Program\Pspice\Application12-PSpiceFiles\SCHEMATIC1\Applic
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .31
+

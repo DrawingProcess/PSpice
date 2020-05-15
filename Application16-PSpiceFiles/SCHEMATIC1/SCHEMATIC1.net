@@ -1,0 +1,10 @@
+* source APPLICATION16
+R_R3         N01002 N01246  100k TC=0,0 
+V_V2         N00868 0 12Vdc
+Q_Q1         N00908 N01246 N01034 Q2N3904
+R_R4         N00936 0  100k TC=0,0 
+R_R2         N00908 N00868  10k TC=0,0 
+C_C1         N00908 N00936  10uF  TC=0,0 
+R_R6         0 N01034  0.1k TC=0,0 
+V_V3         N01002 0  
++PULSE 0 5 0 0 0 1m 2m

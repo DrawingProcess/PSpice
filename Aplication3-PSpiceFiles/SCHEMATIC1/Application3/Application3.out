@@ -1,0 +1,92 @@
+
+**** 05/14/20 20:32:47 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Application3"  [ C:\Users\seongjun\Desktop\Program\Pspice\Aplication3-PSpiceFiles\SCHEMATIC1\Application3.si
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "Application3.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\seongjun\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 1000ns 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source APLICATION3
+I_I1         0 N00298 DC 3Adc  
+R_R1         N00298 N00281  1 TC=0,0 
+R_R2         N00281 N00277  2 TC=0,0 
+R_R3         N00277 N00232  4 TC=0,0 
+R_R4         N00281 N00232  3 TC=0,0 
+R_R5         N00232 N00202  5 TC=0,0 
+R_R6         N00232 N00202  6 TC=0,0 
+R_R7         N00232 N00202  7 TC=0,0 
+R_R8         N00202 0  8 TC=0,0 
+
+**** RESUMING Application3.cir ****
+.END
+
+**** 05/14/20 20:32:47 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Application3"  [ C:\Users\seongjun\Desktop\Program\Pspice\Aplication3-PSpiceFiles\SCHEMATIC1\Application3.si
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00202)   24.0000 (N00232)   29.8880 (N00277)   33.8880 (N00281)   35.8880     
+
+(N00298)   38.8880 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 05/14/20 20:32:47 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Application3"  [ C:\Users\seongjun\Desktop\Program\Pspice\Aplication3-PSpiceFiles\SCHEMATIC1\Application3.si
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .05
+
